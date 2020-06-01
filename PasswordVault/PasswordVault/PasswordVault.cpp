@@ -114,6 +114,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow) {
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) {
     switch (message) {
         case WM_COMMAND:
+        {
             int wmId = LOWORD(wParam);
 
             // Parse the menu selections:
@@ -128,12 +129,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
                     return DefWindowProc(hWnd, message, wParam, lParam);
             }
             break;
+        }
         case WM_PAINT:
+        {
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
             // TODO: Add any drawing code that uses hdc here...
             EndPaint(hWnd, &ps);
             break;
+        }
         case WM_DESTROY:
             PostQuitMessage(0);
             break;
