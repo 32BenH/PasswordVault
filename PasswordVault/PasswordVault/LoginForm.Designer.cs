@@ -23,10 +23,19 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // LoginForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "LoginForm";
+            this.ClientSize = new System.Drawing.Size(491, 308);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "LoginForm";
+            this.Text = "Login";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
