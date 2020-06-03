@@ -21,11 +21,11 @@ namespace PasswordVault {
         }
 
         private void lblSignUp_Click(object sender, EventArgs e) {
-            
+            tabControl.SelectedTab = tabSignUp;
         }
 
         private void lblForgot_Click(object sender, EventArgs e) {
-            
+            tabControl.SelectedTab = tabForgot;
         }
     }
 }
